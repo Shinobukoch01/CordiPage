@@ -52,7 +52,7 @@ header {
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.92%);
+    background: linear-gradient(245.59deg, #da5213 0%, #cf561e 28.53%, #d78450 75.92%);
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -89,14 +89,15 @@ section{
 }
 
 .hero-img img{
-    width: 700px;
-    height: auto;
+    width: 500px;
+    height: 400px;
+    border-style:initial;
 }
 
 .hero-text a{
     display: inline-block;
     color: white;
-    background: #4d9559;
+    background: #ce5219;
     border: 1px solid transparent;
     padding: 12px 30px;
     line-height: 1.4;
@@ -115,13 +116,13 @@ section{
 
 .hero-text a.ctaa i{
     background: transparent;
-    border: 1px solid white;
-    margin-left: 20px;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 .hero-text a.ctaa{
     vertical-align: middle;
-    margin-right: 5px;
+    margin-right: 3px;
 }
 
 .scroll-down{
