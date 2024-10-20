@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">"
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
     <title>CORDIPAGE</title>
 </head>
 <body>
     
     <header>
+        <botton onclick="PlayAudio(); girar();"  class="music-botton" id="boton"><i class='bx bx-music'></i>
+            <audio autoplay loop id="musica-main">
+                <source src="________________________________[_YouConvert.net_].mp3" type="audio/mp3">
+            </audio>
+        </botton>
+
         <a class="logo" href="index.html">CORDIPAGE</a>
 
-        <ul class="navlist">
+        <ul class="navlist"><s></s>
             <li><a href="index.html">INICIO</a></li>
-            <li><a href="gastronomia.html">GASTRONOMÍA</a></li>
+            <li><a href="/gastronomia/gastronomia.html">GASTRONOMÍA</a></li>
             <li><a href="#">ARTESANÍA</a></li>
             <li><a href="#">ECONOMÍA</a></li>
             <li><a href="#">LUGARES EMBLEMÁTICOS</a></li>
@@ -30,27 +33,51 @@
         </ul>
         <div class="bx bx-menu" id="menu-icon" ></div>
     </header>
+
     <section class="hero">
         <div class="hero-text">
-            
             <h1>CORDILLERA</h1>
             <p>Departamento del Paraguay situado en el centro oeste de la Región Oriental.<br> Su capital y ciudad más poblada es Caacupé. </p>
-            <a href="#">Apoyar</a>
+            <a href="#">Calificar</a>
             <a href="#" class="ctaa"> <i class='bx bx-message-dots'></i> Añadir Comentario</a>
         </div>
 
-        <div class="hero-img"> 
-            <img src="imagenes/Nueva carpeta/Imagen de WhatsApp 2024-10-17 a las 22.06.45_97a25856.jpg">
+        <div class="slider-box"> 
+            <ul>
+                <li><img src="imagenes/carrusel/azur lane 0004.png"></li>
+                <li><img src="imagenes/carrusel/azur lane 0005.jpeg"></li>
+                <li><img src="imagenes/carrusel/azur lane 0006.png"></li>
+                <li><img src="imagenes/carrusel/azur lane 0007.jpeg"></li>
+                <li><img src="imagenes/carrusel/Imagen de WhatsApp 2024-10-17 a las 22.06.45_97a25856.jpg"></li>
+            </ul>
         </div>
     </section>
-
-    <div>
-        <a href="#"><i class="ri-play-fill"></i></a>
-    </div>
-
-    <script src="https://unpkg.com/scrollreveal"></script>
-
     <script src="script.js"></script>
-
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <section class="comento">
+        <div class="comentarios">
+            <h3>COMENTARIOS</h3>
+            <p>Comenta tu opinion sobre la pagina!</p>
+        </div>
+        <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://cordipage.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </section>
 </body>
 </html>

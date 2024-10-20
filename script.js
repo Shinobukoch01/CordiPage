@@ -14,6 +14,23 @@ const sr = ScrollReveal ({
 });
 
 sr.reveal('.hero-text',{delay:200, origin:'top'});
-sr.reveal('.hero-img',{delay:450, origin:'top'});
-sr.reveal('.icons',{delay:500, origin:'left'});
+sr.reveal('.slider-box',{delay:450, origin:'top'});
 sr.reveal('.scroll-down',{delay:200, origin:'right'});
+
+function PlayAudio() {
+    var audio = document.getElementById("musica-main");
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
+}
+
+function girar() {
+    var button = document.getElementById("boton");
+    if (button.classList.contains("rotate")) {
+        button.classList.remove("rotate");
+    } else {
+        button.classList.add("rotate");
+    }
+}
