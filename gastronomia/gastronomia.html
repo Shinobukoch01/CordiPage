@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gastronomia</title>
-    <link rel="stylesheet" href="gastyle.css">
-    
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="gastyle.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
+    <title>CORDIPAGE</title>
 </head>
 <body>
     <header>
+        <botton onclick="PlayAudio(); girar();"  class="music-botton" id="boton"><i class='bx bx-music'></i>
+            <audio loop id="musica-main">
+                <source src="../________________________________[_YouConvert.net_].mp3" type="audio/mp3">
+            </audio>
+        </botton>
+
         <a class="logo" href="../index.html">CORDIPAGE</a>
 
         <ul class="navlist">
@@ -28,10 +32,51 @@
             <li><a href="#">RESEÑA HISTÓRICA</a></li>
         </ul>
         <div class="bx bx-menu" id="menu-icon" ></div>
-    </header>    
+    </header>
+    <section>
+        <di clas="titulo">
+            <h2 class="a">GASTRONOMÍA</h2>
+        </di>
+        <p class="segui">
+            En Cordillera también abundan las especialidades culinarias. Especialmente los platos tradicionales como el chipa guasú, la sopa paraguaya o el tereré.
+        </p>
+        
+        <h2 class="eh">Locales Gastronomicos</h2>
+        <div class="container">
+            <div class="card_container">
+                <article class="card_article">
+                    <img src="../imagenes/fotos gastronomia/comisario.jpg" alt="comisario" class="card_img">
+                    <div class="card_data">
+                        <span class="card_description">Pizzas y bebidas</span>
+                        <h2 class="card_title">Comisario</h2>
+                        <a href="#" class="card_button">Ubicación</a>
+        </div>
+                </article>
+
+                <article class="card_article">
+                    <img src="../imagenes/fotos gastronomia/farola.jpg" alt="farola" class="card_img">
+                    <div class="card_data">
+                        <span class="card_description">Cerveza</span>
+                        <h2 class="card_title">Farola Bar</h2>
+                        <a href="#" class="card_button">Ubicación</a>
+                    </div>
+                </article>
+                
+                <article class="card_article">
+                    <img src="../imagenes/fotos gastronomia/patio 1530.jpg" alt="patio1530" class="card_img">
+                    <div class="card_data">
+                        <span class="card_description">Bebidas</span>
+                        <h2 class="card_title">Patio 1530</h2>
+                        <a href="#" class="card_button">Ubicación</a>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </section>
     
-    <h2>GASTRONOMÍA</h2>
 
 
+    <script src="header.js"></script>
 </body>
 </html>

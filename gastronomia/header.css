@@ -1,4 +1,3 @@
-
 *{
     padding: 0;
     margin: 0;
@@ -77,72 +76,9 @@ header {
     cursor: pointer;
     display: none;
 }
-.hero{
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(245.59deg, #da5213 0%, #cf561e 28.53%, #e48347 75.92%);
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 2rem;
-}
 
 section{
     padding:10% 5%;
-}
-.hero-text h5 {
-    font-size: 14px;
-    font-weight: 400;
-    color: white;
-    margin-bottom: 40px;
-}
-
-.hero-text h1{
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 90px;
-    line-height: 1;
-    color: white;
-    margin: 0 0 45px;
-}
-.hero-text h4{
-    font-size: 18px;
-    font-weight: 600;
-    color: white;
-    margin-bottom: 10px;
-}
-.hero-text p{
-    color: white;
-    font-size: 15px;
-    line-height: 1.9;
-    margin-bottom: 40px;
-}
-
-.slider-box img{
-    width: 700px;
-    height: 500px;
-}
-
-.slider-box {
-    overflow: hidden;
-}
-
-.slider-box ul{
-    display: flex;
-    padding: 0;
-    width: 500%;
-    animation:slide 20s infinite alternate ease-in-out;
-}
-
-.slider-box li{
-    width: 200%;
-    list-style: none;
-}
-
-.slider-box img{
-    width: 100%;
-    border-radius: 5%;;
 }
 
 @keyframes slide{
@@ -157,38 +93,6 @@ section{
 
     75% {margin-left: -300%;}
     100% {margin-left: -300%;}
-}
-
-
-.hero-text a{
-    display: inline-block;
-    color: white;
-    background: #ce5219;
-    border: 1px solid transparent;
-    padding: 12px 30px;
-    line-height: 1.4;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 30px;
-    text-transform: uppercase;
-    transition: all .55s ease;
-}
-
-.hero-text a:hover{
-    background: transparent;
-    border: 1px solid white;
-    transform: translate(8px);
-}
-
-.hero-text a.ctaa i{
-    background: transparent;
-    margin-left: 3px;
-    margin-right: 3px;
-}
-
-.hero-text a.ctaa{
-    vertical-align: middle;
-    margin-right: 3px;
 }
 
 .scroll-down{
@@ -221,6 +125,9 @@ section{
         right: 3%;
         transition: .2s;
     }
+    .logo{
+    margin-left: 3.5rem;
+}
 }
 
 @media (max-width: 1460px){
@@ -235,34 +142,12 @@ section{
         width: 100px;
         height: auto;
     }
-    .hero-text h1{
-        font-size: 75px;
-        margin: 0 0 30px;
-    }
-    .hero-text h5{
-        margin-bottom: 25px;
-    }
 }
 
 @media (max-width: 1195px){
     section{
         padding: 0 3%;
         transition: .2s;
-    }
-    .hero-text{
-        padding-top: 115px;
-    }
-    .slider-box{
-        text-align: center;
-    }
-    .slider-box img{
-        width: 560px;
-        height: auto;
-    }
-    .hero{
-        height: 100%;
-        gap: 1rem;
-        grid-template-columns: 1fr;
     }
     .scroll-dow{
         display: none;
@@ -300,16 +185,6 @@ section{
         width: 100%;
         height: auto;
     }
-}
-
-.comentarios h3{
-    font-size: 27px;
-    color: #cf561e;
-}
-
-hr {
-    border: 10px solid;
-    color:#ce5219;
 }
 
 header {            
