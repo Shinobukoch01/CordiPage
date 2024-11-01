@@ -116,7 +116,7 @@ section{
     color: white;
     font-size: 15px;
     line-height: 1.9;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
 
 .slider-box img{
@@ -132,7 +132,7 @@ section{
     display: flex;
     padding: 0;
     width: 500%;
-    animation:slide 20s infinite alternate ease-in-out;
+    animation: slide 20s infinite alternate ease-in-out;
 }
 
 .slider-box li{
@@ -142,7 +142,7 @@ section{
 
 .slider-box img{
     width: 100%;
-    border-radius: 5%;;
+    border-radius: 5%;
 }
 
 @keyframes slide{
