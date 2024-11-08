@@ -14,11 +14,13 @@ body {
 .a {
     color:white;
     font-size: 45px;
+    text-align: center;
 }
 
 .artesanias {
     color: white;
     font-size: 45px;
+    text-align: center;
 }
 
 .eh {
@@ -216,6 +218,8 @@ body {
     margin-top: 100px;
     position: relative;
     margin-left: 18%;
+    border: 5px solid;
+    border-color: #90cfd0;
 }
 
 .imagen-hundida:hover {
@@ -234,6 +238,8 @@ body {
     position: relative;
     margin-left: 24%;
     margin-top: 50px;
+    border: 5px solid;
+    border-color: #90cfd0;
 }
 
 .foto-economia:hover {

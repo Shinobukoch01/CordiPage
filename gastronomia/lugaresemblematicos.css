@@ -14,12 +14,25 @@ body {
 .titulo {
     color:white;
     font-size: 45px;
+    text-align: center;
 }
 
 .texto {
     color: white;
     margin-top: 20px;
     font-size: 20px;
+    text-align: justify;
+    line-height: 1.3;
+}
+
+.ubicacion {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.ubicacion:hover {
+    text-decoration: underline;
 }
 
 .wrapper {
@@ -83,7 +96,7 @@ body {
 }
 
 .description p {
-    color: #b0b0ba;
+    color: #ffffff;
     padding-top: 5px;
 }
 
